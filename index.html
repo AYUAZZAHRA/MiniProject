@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segitiga</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+    <script src="index.js"></script>
+
+    <h1 class="title">Welcome to Katik</h1>
+    <p class="subtitle">Hai Sobat, Selamat datang di katik :) <br> Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar </p>
+
+    <!-- Header / Navbar-->
+    <header>
+        <nav>
+            <div class="menu">
+                <a href="index.html" class="menu-triangle">Segitiga</a><br>
+                <a href="parallelogram.html" class="menu-parallelogram">Jajar Genjang</a><br>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Page-->
+    <main>
+        <section id = "triangle">
+            <div class="card">
+            <div class="top-triangle">
+                <h2>Luas Segitiga</h2>
+            </div>
+            <br><center><img src="assets/Segitiga.jpeg" alt="Segitiga" /></center>
+            <br>
+                <div>
+                    <p>Rumus Luas Segitiga Yaitu :</p>
+                    <center><p><b>L = 1/2 x A x T</b></p></center>
+                </div>
+                <div>
+                    <p>Di mana :</p>
+                    <p>L = Luas</p>
+                    <p>a = Panjang Alas</p>
+                    <p>t = Tinggi</p>
+                    <br>
+                    <hr>
+                </div>
+                <br>
+                <div class="FormHitung">
+                    <center><h1 class ="luas">Hitung Luas Segitiga</h1></center>
+                    <form action="" class="form-triangle">
+                        <input type="number" name="triangular-pedestal" id="alas" />
+                        <input type="number" name="triangle-height" id="tinggi" />
+                        <button type="submit" onclick="return luassegitiga()" class="button-triangle" >Hitung</button>
+                        <div id="output"></div>
+                        <button type="reset" class="reset-triangle" onclick="ulang()">Reset</button>
+                    </form>
+                </div>
+            </div>
+            <br><br><br><br><br>
+
+            <div class="card">
+                <div class="top-triangle">
+                    <h2>Keliling Segitiga</h2>
+                </div>
+                <br><center><img src="assets/Segitiga.jpeg" alt="Segitiga" /></center>
+                <br>
+                    <div>
+                        <p>Rumus Keliling Segitiga Yaitu :</p>
+                        <center><p><b>K = S1 + S2 + S3</b></p></center>
+                    </div>
+                    <div>
+                        <p>Di mana :</p>
+                        <p>K = Keliling</p>
+                        <p>S1 = Sisi A</p>
+                        <p>S2 = Sisi B</p>
+                        <p>S3 = Sisi C</p>
+                        <br>
+                        <hr>
+                    </div>
+                    <br>
+                    <div class="FormKelSegitiga">
+                        <center><h1>Hitung Keliling Segitiga</h1></center>
+                        <form action="" class="form-triangle">
+                            <input type="number" name="S1" id="s1"/>
+                            <input type="number" name="S2" id="s2"/>
+                            <input type="number" name="S3" id="s3"/>
+                            <button type="submit" onclick="return kelilingsegitiga()" class="button-triangle" >Hitung</button>
+                            <div id="outputkel"></div>
+                            <button type="reset" class="reset-triangle" onclick="ulang2()">Reset</button>
+                    </form>
+                        </form>
+                    </div>
+                </div>
+        </section>
+    </main>
+</body>
+</html>

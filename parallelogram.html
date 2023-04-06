@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+    <h1 class="title">Welcome to Katik</h1>
+    <p class="subtitle">Hai Sobat, Selamat datang di katik :) <br> Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar </p>
+
+    <!-- Header / Navbar-->
+    <header>
+        <nav>
+            <div class="menu">
+                <a href="index.html" class="menu-triangle">Segitiga</a><br>
+                <a href="parallelogram.html" class="menu-parallelogram">Jajar Genjang</a><br>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Page-->
+    <main>
+        <section id = "parallelogram">
+            <div class="card">
+            <div class="top-parallelogram">
+                <h2>Luas Jajar Genjang</h2>
+            </div>
+            <br><center><img src="assets/jajargenjang.png" alt="Jajar Genjang" /></center>
+            <br>
+                <div>
+                    <p>Rumus Luas Jajar Genjang Yaitu :</p>
+                    <center><p><b>L = A x T</b></p></center>
+                </div>
+                <div>
+                    <p>Di mana :</p>
+                    <p>L = Luas</p>
+                    <p>a = Panjang Alas</p>
+                    <p>t = Tinggi</p>
+                    <br>
+                    <hr>
+                </div>
+                <br>
+                <div class="formParallelogram">
+                    <center><h1>Hitung Luas Jajar Genjang</h1></center>
+                    <form action="" class="form-triangle">
+                        <input type="number" name="triangular-pedestal" />
+                        <input type="number" name="triangle-height"/>
+                        <button type="submit" onclick="return luasjajargenjang()" class="button-parallelogram" >Hitung</button>
+                        <div id="output3"></div>
+                        <button type="reset" class="reset-triangle" onclick="ulang3()">Reset</button>
+                    </form>
+                </div>
+            </div>
+            <br><br><br><br><br>
+            <div class="card">
+                <div class="top-parallelogram">
+                    <h2>Keliling Jajar Genjang</h2>
+                </div>
+                <br><center><img src="assets/jajargenjang.png" alt="Jajar Genjang" /></center>
+                <br>
+                    <div>
+                        <p>Rumus Keliling Jajar Genjang Yaitu :</p>
+                        <center><p><b>K = 2 x (a + b)</b></p></center>
+                    </div>
+                    <br>
+                    <div class="formParallelogram2">
+                        <center><h1>Hitung Keliling Jajar Genjang</h1></center>
+                        <form action="" class="form-triangle">
+                            <input type="number" name="S1"/>
+                            <input type="number" name="S2" />
+                            <input type="number" name="S3"/>
+                            <button type="submit" onclick="return keljajargenjang()" class="button-parallelogram" >Hitung</button>
+                            <div id="output4"></div>
+                            <button type="reset" class="reset-triangle" onclick="ulang4()">Reset</button>
+                        </form>
+                    </div>
+                </div>
+        </section>
+    </main>
+</body>
+</html>
